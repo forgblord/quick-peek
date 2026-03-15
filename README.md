@@ -15,10 +15,24 @@
 
 В `bibliography` находится доп.литература для дальнейшего ознакомления.
 
-## Запуск и получение артефактов
+## Запуск в Jupyter Lab
 
 Для запуска проекта необходимо установить UV.
 Инструкции по установке доступны по [ссылке](https://docs.astral.sh/uv/getting-started/installation/#installation-methods).
+
+Создать виртуальное окружение:
+
+```bash
+uv venv
+```
+
+Запустить Jupyter Lab:
+
+```bash
+uv run jupyter lab
+```
+
+## Запуск в VSCode (TBD)
 
 Создать виртуальное окружение:
 
@@ -34,18 +48,4 @@ source .venv/bin/activate # Linux/Mac
 .venv\Scripts\activate # Windows
 ```
 
-Установить зависимости:
-
-```bash
-uv pip install -e .
-```
-
-Запуск Jupyter Notebook может производиться двумя способами:
-
-1. Используя Jupyter Notebook в браузере:
-
-```bash
-uv run jupyter lab
-```
-
-2. Используя VSCode (с расширением): выбрать ядром (select kernel) ядро из `venv`
+Запустить VSCode.
